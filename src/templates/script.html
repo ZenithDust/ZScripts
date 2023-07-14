@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+  <title>Roblox Scripts - ZScripts, The #1 Script Sharing Platform</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="{{ url_for('static',filename='styles/home.css') }}">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <!-- Google tag (gtag.js) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RHGTTXMSM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-3RHGTTXMSM');
+  </script>
+
+  <meta name="description" content="Amplify your Roblox gameplay with our script sharing platform. We have been actively posting scripts these days!">
+  <meta name="keywords" content="roblox scripts, find roblox scripts, best roblox scripts, synapsex, roblox script lua, roblox script finder">
+  <meta name="author" content="Zenith">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.discordapp.com/attachments/1117367259514544200/1125483967492136980/1688323038821.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.discordapp.com/attachments/1117367259514544200/1125483967492136980/1688323038821.png">
+  <meta name="theme-color" content="#6610f2">
+  <meta property="og:image" content="https://cdn.discordapp.com/attachments/1117367259514544200/1125483967492136980/1688323038821.png">
+  <meta name="twitter:card" content="https://media.discordapp.net/attachments/1117367259514544200/1125493123842310284/20230704_022734_0000.png">
+</head>
+
+<body>
+
+  <header class="header navbar navbar-expand-lg navbar-dark bg-light position-absolute w-100">
+    <div class="container">
+      <a href="{{ url_for('views.home') }}" id="brandIcon" class="navbar-brand pe-3" data-cf-modified-9ab89ffd527cbf5829642912->
+        <span class="fw-bold"><strong class="logo-title">ZScripts</strong></span>
+      </a>
+      <div id="navbarNav" class="offcanvas offcanvas-end" data-bs-backdrop="true">
+        <div class="offcanvas-header border-bottom">
+          <span class="offcanvas-title h5"><strong>Menu</strong></span>
+          <button type="button" class="close-btn" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bx bx-x nyek"></i></button>
+        </div>
+        <nav class="offcanvas-body">
+          <ul class="navbar-nav ms-5 me-auto mb-2 mb-lg-0">
+            <li class="nav-item tab-ind">
+              <strong><a class="nav-link tab-ind-text" data-cf-modified-9ab89ffd527cbf5829642912-><i class="bx bx-hash fs-5 lh-1 me-1 ico tab-ind-icon" id="ico"></i> Tabs</a></strong>
+            </li>
+            <li class="nav-item">
+              <strong><a href="{{ url_for('views.home') }}" class="nav-link" id="home"><i class="bx bxs-home fs-5 lh-1 me-1 ico" id="ico"></i> Home</a></strong>
+            </li>
+            <li class="nav-item">
+              <strong><a href="/scripts" id="scripts" class="nav-link"><i class="bx bx-code fs-5 lh-1 me-1 ico" id="ico"></i> Scripts</a></strong>
+            </li>
+            <li class="nav-item tab-ind">
+              <strong><a class="nav-link tab-ind-text"><i class="bx bx-hash fs-5 lh-1 me-1 ico tab-ind-icon" id="ico"></i> Links</a></strong>
+            </li>
+            <li class="nav-item nav-active">
+              <strong><a href="https://rekonise.com/hydrogen-executor-download-u3ip5" class="nav-link hyd" data-cf-modified-9ab89ffd527cbf5829642912-><i class="bx bxs-bolt-circle fs-5 lh-1 me-1 ico"></i> Hydrogen</a></strong>
+            </li>
+            <li class="nav-item nav-active">
+              <strong><a href="https://rekonise.com/fluxus-executor-download-e5poi" class="nav-link flux" data-cf-modified-9ab89ffd527cbf5829642912-><i class="bx bxs-bolt fs-5 lh-1 me-1 ico"></i> Fluxus</a></strong>
+            </li>
+            <li class="nav-item nav-active">
+              <strong><a href="https://www.youtube.com/@ZenithRoblox" class="nav-link yt" data-cf-modified-9ab89ffd527cbf5829642912-><i class="bx bxl-youtube fs-5 lh-1 me-1 ico"></i> YouTube</a></strong>
+            </li>
+            <div class="overlay"></div>
+          </ul>
+        </nav>
+      </div>
+      <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="bx bx-align-right opener"></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="w-100 background-img"><img class="sg-img-overlay" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnYqnsLQTAW13auKmCyyrooSi5EtHcBf-q_A&usqp=CAU"></div>
+
+  <div class="container main-cont">
+    <h3 class="scripts-ind">Scripts :</h3>
+    <div class="search-bar w-75 d-flex justify-content-center">
+      <i class="bx bx-search-alt-2"></i>
+      <input type="text" id="search-input" class="search-input" onkeyup="search()" placeholder="Search Scripts (Not Working)">
+    </div>
+    <div class="container script-cont">
+      <ul id="scripts" class="list-group list-group-horizontal-sm collapse text-center section-list w-100 d-flex aligns-items-center justify-content-center">
+        {% for script in scripts %}
+            <li id="script-list" class="list-group-item w-auto text-center d-flex aligns-items-center justify-content-center">
+              <input id="sc-title" type="hidden" value="{{ script['scriptName'] }}">
+              <div class="card w-auto">
+                <div class="card-img-top script-img">
+                  <img class="w-100" src="{{ script['scriptImage'] }}">
+                </div>
+                <div class="card-footer script-footer">
+                  <form method="post" name="scriptInfo">
+                    <input type="hidden" name="sLoadstring" value="{{ script['scriptLoadstring'] }}">
+                    <input type="hidden" name="sName" value="{{ script['scriptName'] }}" />
+                    <input type="hidden" name="sImage" value="{{ script['scriptImage'] }}">
+                    <input type="hidden" name="sTimeAgo" value="{{ script['dateTime'] }}">
+                    <input type="hidden" name="sDesc" value="{{ script['scriptDescription'] }}">
+                    <input type="hidden" name="sYT" value="{{ script['videoURL'] }}">
+                    <input type="hidden" name="sKey" value="{{ script['keySys'] }}">
+                    <input type="hidden" name="sGame" value="{{ script['gameLink'] }}" />
+                    <button class="btn get-script ripple" type="submit"><i class="bx bxs-hand-up"></i></button>
+                  </form>
+                  {% for stats in video_stats %}
+                    {% if stats.url == script.videoURL %}
+                     {% if loop.index <= 1 %}
+                      <div class="script-info">
+                        <div class="s-titles">
+                          <div class="s-title-main">
+                            <h1 class="script-title text-center text-break"> {{ script['scriptName'] }}</h1>
+                          </div>
+                        </div>
+                        <h4 class="script-date">
+                          <small>
+                            <i class="bx bxs-time sd-icon"></i> <small>{{ script['timeAgo'] }}</small> 
+                            <small class="script-infos">[<i class="bx bx-show-alt v-icon"></i> {{ stats.views }}] 
+                            <span class="likes">[<i class="bx bx-like v-icon"></i> {{ stats.likes }}]</span> 
+                            <span class="verified">[<i class="bx bxs-badge-check v-icon"></i>]</span>
+                            {% if script['keySys'] == 'No' %}
+                            {% else %}
+                            <span style="color: #5387F6;">[<i class="bx bx-key v-ico"></i>]</span>
+                            {% endif %}
+                            </small>
+                         </small></h4>
+                      </div>
+                     {% endif %}
+                    {% endif %}
+                  {% endfor %}
+                </div>
+              </div>
+            </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  
+  <script src="{{ url_for('static', filename='scripts/scripts.js') }}"></script>
+
+</body>
+
+</html>

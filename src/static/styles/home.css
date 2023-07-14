@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+@import url("roots.css");
+
+@font-face {
+  font-family: 'Metropolis-SemiBold';
+  src: url('/src/static/fonts/Metropolis-SemiBold.otf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Metropolis-Medium';
+  src: url('/src/static/fonts/Metropolis-Medium.otf');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Metropolis-Bold';
+  src: url('/src/static/fonts/Metropolis-Bold.otf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GBold';
+  src: url('../fonts/GothamBold.otf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GBlack';
+  src: url('../fonts/GothamBlack.otf');
+  font-weight: bolder;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GLight";
+  src: url('../fonts/GothamLight.otf');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GThin";
+  src: url('../fonts/GothamThin.otf');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima";
+  src: url('../fonts/Proxima.otf');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bernoru';
+  src: url('../font/bernoru.otf');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'BernoruB';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Bernoru Black Ultra Expanded'), url('../fonts/bernoru-blackultraexpanded.woff') format('woff');
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box
+}
+
+body {
+  margin: 0;
+  font-family: 'Manrope', sans-serif !important;
+  font-size: var(--yj-body-font-size);
+  font-weight: var(--yj-body-font-weight);
+  line-height: var(--yj-body-line-height);
+  color: var(--yj-body-color);
+  text-align: var(--yj-body-text-align);
+  background-color: var(--z-main);
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  white-space: nowrap;
+  overflow-x: hidden;
+}

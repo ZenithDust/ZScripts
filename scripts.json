@@ -1,0 +1,16 @@
+{
+  "scripts": [
+    {
+      "scriptName": "ZSCRIPTS.XYZ WEBSITE",
+      "scriptImage": "https://media.discordapp.net/attachments/1117169500106792972/1125558216881868873/20230704_022734_0000.png",
+      "scriptLoadstring": "local Zscripts = 'Coming Soon!'",
+      "scriptDescription": "WEBSITE COMING SOON!!",
+      "dateTime": [2016,6,2,2,50],
+      "newDate": [2016,6,10],
+      "supported": "AndroidOnly",
+      "keySys": "No",
+      "gameLink": "None",
+      "videoURL": "https://youtube.com/watch?v=uEVmD6n8Il0"
+        }
+    ]
+}
